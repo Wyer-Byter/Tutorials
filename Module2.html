@@ -5,12 +5,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>VueJS Module 2</title>
 		<link rel="stylesheet" href="">
-		<script src=".\vue.js"></script>
+		<script src="vue.js"></script>
     </head>
     <body>
         <div id="app">
-            <p>{{ sayHello() }}</p>
+            <h1 v-once>{{ title }}</h1>
+            <p>{{ sayHello() }} - <a v-bind:href="link">Google</a> </p>
+            <hr>
+            <p v-html='finishedLink'></p>
         </div>
-		<script src=".\module2.js"></script>
+		<script src="module2.js"></script>
     </body>
 </html>
