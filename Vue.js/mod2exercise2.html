@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VueJS Module 2 Exercise 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <button v-on:click="increase(2, $event)">Click me</button>
+        <p>{{ counter }}</p>
+        <p v-on:mousemove="updateCoordinates">
+            Coordinates: {{ x }} / {{ y }}
+            - <span v-on:mousemove.stop="">DEAD SPOT</span>
+        </p>
+        <input type="text" v-on:keyup.enter.space="alertMe">
+    </div>
+    <script src="mod2exercise2.js"></script>
+</body>
+
+</html>
