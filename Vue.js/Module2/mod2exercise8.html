@@ -3,11 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>VueJS Module 2 Exercise 4</title>
+    <title>VueJS Module 2 Exercise 8</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="mod2exercise7.css" />
-    <script src="vue.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="mod2exercise8.css" />
+    <script src="..\vue.js"></script>
 </head>
 <body>
     <div id="app">
@@ -16,8 +16,10 @@
             @click="attachRed = !attachRed"
             :class="divClasses"></div>
         <div class="demo" :class="{red: attachRed}"></div>
-        <div class="demo"></div>
+        <div class="demo" :class="[color, {red: attachRed}]"></div>
+        <hr>
+        <input type="text" v-model="color">
     </div>
-    <script src="mod2exercise7.js"></script>
+    <script src="mod2exercise8.js"></script>
 </body>
 </html>
