@@ -20,7 +20,6 @@
 
     .quote {
         cursor: pointer;
-        border: thick, black;
     }
 
     .quote:hover {
