@@ -41,6 +41,15 @@
 
 <script>
     export default {
+        data() {
+            return {
+                firstName: '',
+                lastName: '',
+                email: '',
+                password: '',
+                storeData: ''
+            }
+        }
     }
 </script>
 
